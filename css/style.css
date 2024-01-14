@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Luckiest+Guy&family=Mouse+Memoirs&display=swap');
+@font-face {
+    font-family: 'Saya';
+    src: url(../fuentes/Saiyan-Sans\ Right\ Oblique.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+/*  
+    font-family: 'Grandstander', cursive;
+    font-family: 'Luckiest Guy', cursive; 
+    font-family: 'Mouse Memoirs', sans-serif;
+*/
+
+body{
+    font-family: 'Mouse Memoirs', cursive;
+    background-image: url(../assets/paisaje.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #44b462;
+}
+
+#seleccionar-albañil{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulos{
+    margin-top: 20px;
+}
+
+.titulo1 {
+    font-family: 'Saya';
+    font-size: 70px;
+    color: yellow;
+    margin: 0; 
+ }
+
+ .titulo2 {
+    font-family: 'Saya';
+    font-size: 70px;
+    color: orangered; 
+    margin: 0;
+ }
+
+.subtitulo{
+    color: rgb(255, 255, 255); 
+    font-size: 35px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.targeta-albañil{
+    background-color: #b6b8b7;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.imgAlbañiles{
+    width: 145px;
+    height: 130px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #00A8B5;
+}
+
+.boton-albañil{
+    font-family: 'Mouse Memoirs', cursive;
+    background-color: #F37121;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#seleccionar-chamba{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-chamba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mouse Memoirs', cursive;
+    background-color: #F37121;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#mensajes {
+    background-color: #C70039;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.mensaje-ataques{
+    margin-top: 5px;
+}
+
+#boton-reiniciar{
+    font-family: 'Mouse Memoirs', cursive;
+    background-color: #F37121;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.tarjetas-ataques{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ataques-padre {
+    background-color: #C0E218;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 160px 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ataques-padre::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+.ataques-padre::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del thumb (barra) */
+}
+
+.ataques-padre::-webkit-scrollbar-track {
+    background-color: #C0E218; /* Color del fondo del scrollbar */
+}
+
+.ataques-hijo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+#ver-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 2px solid white
+}
+
+#ver-mapa{
+    margin-top: 100px;
+}
+
+.button-mobile {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.button-mobile button{
+    font-family: 'Mouse Memoirs', cursive;
+    background-color: #F37121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.arriba {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.izquierda {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.derecha {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.abajo {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+@media (max-width: 990px) {
+    .targeta-albañil{
+        width: 120px;
+        height: 160px;
+        margin: 0;
+    }
+    .imgAlbañiles{
+        width: 75px;
+        height: 60px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    body {
+        margin: 0;
+        overflow: auto;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    p{
+        margin: 0;
+    }
+    .titulo1 {
+        font-size: 30px;
+     }
+    
+     .titulo2 {
+        font-size: 30px;
+     }
+    
+    .subtitulo{
+        font-size: 25px;
+    }
+    .tarjetas, .tarjetas-ataques {
+       display: flex;
+       flex-direction: column;
+       margin: 0;
+    }
+    .targeta-albañil{
+        width: 160px;
+        height: 80px;
+        margin: 0;
+    }
+    .imgAlbañiles{
+        width: 75px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .ataques-hijo{
+        word-wrap: break-word;
+    }
+
+    #mensajes{
+        width: 250px;
+    }
+
+    .ataques-padre{
+        width: 320px;
+        word-wrap: break-word;
+    }
+}
+
+

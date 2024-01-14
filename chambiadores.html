@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Albañiles Ball Z</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <section id="seleccionar-albañil">
+            <div class="titulos">
+                <h1 class="titulo1" id="titulo1">CHAMBEADORES</h1>
+                <h1 class="titulo2" id="titulo2">BALL Z</h1>
+            </div>
+
+            <h2 class="subtitulo">Elige a tu ALBAÑIL 🧱⚒️💧</h2>
+
+            <div class="tarjetas" id="tarjetas">
+               
+            </div>
+
+            <button class="boton-albañil" id="boton-albañil">🪖 Seleccionar Albañil</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo-mapa">Recorre el mapa con tu Albañil</h1>
+            <canvas id="mapa"></canvas> 
+            <div class="button-mobile">
+                    <button class="izquierda" ontouchend="detenerMovimiento()" ontouchstart='moverIzquierda()'>Izquierda</button>
+                
+                    <button class="arriba" ontouchend="detenerMovimiento()" ontouchstart='moverArriba()'>Arriba</button>
+               
+                    <button class="derecha" ontouchend="detenerMovimiento()" ontouchstart='moverDerecha()'>Derecha</button>
+               
+                    <button class="abajo" ontouchend="detenerMovimiento()" ontouchstart='moverAbajo()'>Abajo</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-chamba">
+
+            <div class="titulos">
+                <h1 class="titulo1" id="titulo1">CHAMBEADORES</h1>
+                <h1 class="titulo2" id="titulo2">BALL Z 🧱⚒️💧</h1>
+            </div>
+
+            <h2 class="subtitulo">Elige tu Chamba:</h2>
+
+            <divc id="contenedor-ataques" class="tarjetas-ataques">
+        
+            </divc>
+
+            <div id="mensajes">
+                <p id="resultado">Ah Chambear!!</p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar Obra</button>
+                </section>
+            </div>
+
+
+            <div class="ataques-padre">
+                <div class="ataques-hijo">
+                    <p id="vidas-jugador"></p>
+                    <p id="albañil-jugador"></p>
+                    <div id="ataques-jugador"></div>
+                </div>
+                <div class="ataques-hijo">
+                    <p id="vidas-enemigo"></p>
+                    <p id="albañil-enemigo"></p>
+                    <div id="ataques-enemigo"></div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/chambiadores.js"></script>
+    </body>
+</html>
